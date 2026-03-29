@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Janhavi Janardhan Lunge | Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script>emailjs.init("MG6nTVi7clYTBAYfh");</script>
+
+<body>
+
+<canvas id="particles"></canvas>
+<div class="cursor" id="cursor"></div>
+<div class="cursor-trail" id="cursorTrail"></div>
+
+<!-- ══ NAVBAR ══ -->
+<nav id="navbar">
+  <div class="logo">JJL</div>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#education">Education</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+  <div class="nav-toggle" id="navToggle">
+    <span></span><span></span><span></span>
+  </div>
+</nav>
+
+<!-- ══ HERO ══ -->
+ <!-- ══ 1st page ══ -->
+<section class="hero" id="home">
+  <div class="hero-bg-orb orb1"></div>
+  <div class="hero-bg-orb orb2"></div>
+  <div class="hero-bg-orb orb3"></div>
+
+  <div class="hero-content">
+    <div class="hero-badge">
+      <span class="badge-dot"></span>
+      Open to Internship &amp; Opportunities
+    </div>
+    <h1>
+      <span class="hi">Hi, I'm</span>
+      <span class="name">Janhavi Janardhan Lunge</span>
+    </h1>
+    <div class="hero-role">
+      <span class="role-chip">BCA </span>
+      <span class="role-sep">·</span>
+      Aspiring Software Developer
+    </div>
+    <p class="hero-bio">Passionate about AI &amp; software development. I seek a challenging position where I can enhance my technical skills, gain practical experience, and contribute effectively to building impactful technology.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn btn-primary">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z"/></svg>
+        View My Work
+      </a>
+      <a href="#contact" class="btn btn-ghost">
+        <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        Get In Touch
+      </a>  
+    </div>
+    <div class="hero-socials">
+      <a href="https://www.linkedin.com/in/janhavi-lunge-386828389" class="s-link" title="LinkedIn" target="_blank" rel="noreferrer">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+      </a>
+      <a href="https://github.com/janhavilunge25-ui"
+       class="s-link" title="GitHub" target="_blank" rel="noreferrer">
+        <svg fill="currentColor" viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+      </a>
+      <a href="https://www.instagram.com/jaan_vi.___?igsh=MWNsOWpic3U4Yjd3ZQ==" class="s-link" title="instagram" target="_blank" rel="noreferrer">
+        <svg fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 
+          0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 
+           0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069z"/>
+        </svg>
+
+
+      </a>
+      <a href="mailto:janhavilunge25@gmail.com" class="s-link" title="Email">
+        <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <div class="hero-visual">
+    <div class="avatar-wrap">
+          <div class="avatar-body">
+            <img src="1st.jpeg" alt="Janhavi" class="circle-img">
+          
+        </div>
+      </div>
+      <div class="float-card fc1"><span class="fc-dot"></span> Available Now</div>
+      <div class="float-card fc2">🤖 BCA</div>
+      <div class="float-card fc3">💻 Dev &amp; Learner</div>
+    </div>
+  </div>
+
+  <div class="scroll-cue">
+    <div class="scroll-bar"></div>
+    Scroll
+  </div>
+</section>
+<!-- ══ 2nd page══ -->
+<!-- ══ ABOUT ══ -->
+<section class="about" id="about">
+  <div class="about-grid">
+    <div class="reveal-left">
+      <div class="about-image-wrap">
+        <div class="about-img-card">
+          <span class="about-img-card-overlay"></span>
+          <img src="2nd.jpeg" alt="Janhavi" class="about-circle-img" style="width:100%; height:100%; object-fit:cover;">
+          <div class="about-corner corner-tl"></div>
+          <div class="about-corner corner-br"></div>
+        </div>
+        <div class="about-stats">
+          <div class="stat-box"><div class="stat-num">3</div><div class="stat-label">Projects Built</div></div>
+          <div class="stat-box"><div class="stat-num">6</div><div class="stat-label">Certifications</div></div>
+         
+        </div>
+      </div>
+    </div>
+    <div class="reveal-right">
+      <div class="section-label">About Me</div>
+      <h2 class="section-title">Passionate about <span>AI & Tech</span></h2>
+      <div class="about-text">
+        <p>I'm Janhavi Janardhan Lunge, a BCA student specializing in Artificial Intelligence at Maherbanbu College of Science and Commerce (Sant Gadge Baba Amravati University, Amravati).</p>
+        <p>I am passionate about using technology to solve real-world problems and build meaningful digital experiences. I thrive at the intersection of software development and AI with hands-on projects, coursework, and self-learning.</p>
+      </div>
+      <div class="about-highlights">
+        <div class="highlight-item"><div class="h-icon">🎯</div> Goal-oriented with strong problem-solving skills</div>
+        <div class="highlight-item"><div class="h-icon">🤝</div> Team player with excellent communication</div>
+        <div class="highlight-item"><div class="h-icon">🚀</div> Quick learner, always exploring new technologies</div>
+        <div class="highlight-item"><div class="h-icon">🌐</div> Interested in Web Dev, ML & Data Science</div>
+      </div>
+      <!-- ══ resume ══ -->
+      <div class="about-btns">
+        <a href="https://drive.google.com/file/d/1BuSLAENUK1vxhTnYosQef6-OxT0Ppv2Z/view?usp=sharing" class="btn btn-primary">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14,2 14,8 20,8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10,9 9,9 8,9"/></svg>
+          View Resume
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ══ 3rd page ══ -->
+<!-- ══ SKILLS ══ -->
+<section id="skills">
+  <div class="reveal">
+    <div class="section-label">What I Know</div>
+    <h2 class="section-title">My <span>Skills</span></h2>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal" style="transition-delay:0.1s">
+      <div class="skill-icon">🐍</div>
+      <div class="skill-name">Python</div>
+      <div class="skill-desc">
+        <span>Python</span><br>
+        <span>Pandas</span><br>
+        <span>NumPy</span>
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="82"></div></div>
+      <div class="skill-pct">82%</div>
+    </div> 
+
+
+    <div class="skill-card reveal" style="transition-delay:0.2s">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">Web Development</div>
+      <div class="skill-desc">
+        <span>HTML5</span><br>
+        <span>CSS3</span><br>
+        <span>JavaScript</span><br>
+        <span>React.js</span>
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="78"></div></div>
+      <div class="skill-pct">78%</div>
+    </div>
+
+
+    <div class="skill-card reveal" style="transition-delay:0.3s">
+      <div class="skill-icon">📊</div>
+      <div class="skill-name">Machine Learning</div>
+      <div class="skill-desc">
+        <span>scikit-learn</span><br>
+        <span>TensorFlow</span><br>
+        <span>PyTorch</span>
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="65"></div></div>
+      <div class="skill-pct">65%</div>
+    </div>
+
+
+    <div class="skill-card reveal" style="transition-delay:0.4s">
+      <div class="skill-icon">⚙️</div>
+      <div class="skill-name">C++</div>
+      <div class="skill-desc">
+        <span>C++</span><br>
+        <span>STL</span><br>
+        <span>OOP</span>
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="72"></div></div>
+      <div class="skill-pct">72%</div>
+    </div>
+
+
+    <div class="skill-card reveal" style="transition-delay:0.5s">
+      <div class="skill-icon">☕</div>
+      <div class="skill-name">Java</div>
+      <div class="skill-desc">
+        <span>Java</span><br>
+        <span>OOP</span><br>
+        <span>DSA</span>
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="68"></div></div>
+      <div class="skill-pct">68%</div>
+    </div>
+
+
+    <div class="skill-card reveal" style="transition-delay:0.6s">
+      <div class="skill-icon">🛠️</div>
+      <div class="skill-name">Tools & Others</div>
+      <div class="skill-desc">
+        <span>Git</span><br>
+        <span>GitHub</span><br>
+        <span>VS Code</span><br>
+        <span>MS Office</span><br>
+        <span>Pycharm</span><br>
+        <span>IDE</span>
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div>
+      <div class="skill-pct">80%</div>
+    </div>
+
+
+    <div class="skill-card reveal" style="transition-delay:0.7s">
+      <div class="skill-icon">🤖</div>
+      <div class="skill-name">Artificial Intelligence</div>
+      <div class="skill-desc">
+        <span>ChatGPT</span><br>
+        <span>Blackbox</span><br>
+        <span>Meta</span><br>
+        <span>Grok</span>
+      </div>
+      <div class="skill-bar-wrap"><div class="skill-bar" data-width="75"></div></div>
+      <div class="skill-pct">75%</div>
+    </div>
+  </div>
+</section>
+<!-- ══ 4th page══ -->
+<!-- ══ PROJECTS ══ -->
+<section class="projects" id="projects">
+  <div class="reveal">
+    <div class="section-label">What I've Built</div>
+    <h2 class="section-title">My <span>Projects</span></h2>
+  </div>
+<!-- ══ 1st PROJECT ══ -->
+  <div class="projects-grid">
+    <div class="project-card reveal" style="transition-delay:0.1s">
+      <div class="project-thumb p-thumb-1">📄</div>
+      <div class="project-body">
+        <div class="project-title"> Resume Generator</div>
+        <div class="project-desc">An intelligent resume-building assistant developed in Python, leveraging NLP to understand user inputs and generate structured, professional resumes through natural, context-aware conversations  
+        </div>
+        <div class="project-tags">
+          <span class="p-tag">HTML 5</span><span class="p-tag"> CSS</span><span class="p-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="https://resume-sand-nu.vercel.app/" class="p-link p-link-primary">🔗 Live Demo</a>
+          <a href="#" class="p-link p-link-ghost">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+   <!-- ══ 2nd PROJECT ══ -->
+    <div class="project-card reveal" style="transition-delay:0.4s">
+      <div class="project-thumb p-thumb-2">📱</div>
+      <div class="project-body">
+        <div class="project-title">Portfolio Website</div>
+        <div class="project-desc">This portfolio — designed and developed from scratch using pure HTML, CSS and JavaScript with smooth animations and a modern UI.</div>
+        <div class="project-tags">
+          <span class="p-tag">HTML</span><span class="p-tag">CSS</span><span class="p-tag">JavaScript</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="p-link p-link-primary">🔗 Live Demo</a>
+          <a href="#" class="p-link p-link-ghost">GitHub</a>
+        
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<!-- ══ 5th page ══ -->
+<!-- ══ EXPERIENCE ══ -->
+<section id="experience">
+  <div class="reveal">
+    <div class="section-label">My Journey</div>
+    <h2 class="section-title">Work <span>Experience</span></h2>
+  </div>
+  <!-- ══ 1st experience ══ -->
+  <div class="timeline">
+    <div class="timeline-item reveal">      <div class="t-period">2026</div>
+      <div class="t-role">IoT Development Intern</div>
+      <div class="t-org"></div>
+      <div class="t-desc">Built Wi-Fi-enabled IoT systems using NodeMCU ESP8266, integrating DHT11 for temperature &amp; humidity monitoring, ultrasonic sensors for distance detection, and LDRs for ambient light-based automation. Developed a 5V motor pump control system for smart irrigation and programmed LED arrays for visual output and automation workflows.</div>
+      <div class="t-skills"><span class="t-skill">NodeMCU ESP8266</span><span class="t-skill">Arduino IDE</span><span class="t-skill">Sensor Integration</span><span class="t-skill">Embedded C</span><span class="t-skill">IoT Cloud</span><span class="t-skill">Circuit Design</span></div>
+    </div>
+   
+      
+    </div>
+  </div>
+</section>
+
+<!-- ══ 6th page ══ -->
+<!-- ══ EDUCATION ══ -->
+<section class="education" id="education">
+  <div class="reveal">
+    <div class="section-label">My Background</div>
+    <h2 class="section-title">My <span>Education</span></h2>
+  </div>
+  <!-- ══ bca ══ -->
+  <div class="edu-grid">
+    <div class="edu-card reveal" style="transition-delay:0.1s">
+      <div class="edu-icon">🎓</div>
+      <div class="edu-degree">BCA — Artificial Intelligence</div>
+      <div class="edu-inst">Maherbanbu College of Science and Commerce, Amravati</div>
+      <div class="edu-year">2022 – 2025 (Pursuing)</div>
+      <span class="edu-badge">Current</span>
+    </div>
+    <!-- ══ 12th══ -->
+    <div class="edu-card reveal" style="transition-delay:0.2s">
+      <div class="edu-icon">📚</div>
+      <div class="edu-degree">HSC — Computer Science (12th)</div>
+      <div class="edu-inst">RLT, Akola, Maharashtra State Board</div>
+      <div class="edu-year">2021 – 2022</div>
+      <span class="edu-badge">Completed (55.50%)</span>
+    </div>
+    <!-- ══ 10th ══ -->
+    <div class="edu-card reveal" style="transition-delay:0.3s">
+      <div class="edu-icon">🏫</div>
+      <div class="edu-degree">SSC — 10th Certificate</div>
+      <div class="edu-inst">Geetanjali Vidyalay, Kanheri Sarap, Akola</div>
+      <div class="edu-year">2019 – 2020</div>
+      <span class="edu-badge">Completed (83.40%)</span>
+    </div>
+  </div>
+</section>
+
+<!-- ══ 7th page ══ -->
+<!-- ══ CONTACT ══ -->
+<section id="contact">
+  <div class="reveal">
+    <div class="section-label">Let's Connect</div>
+    <h2 class="section-title">Get In <span>Touch</span></h2>
+  </div>
+  <!-- ══ email ══ -->
+  <div class="contact-wrap">
+    <div class="contact-info reveal-left">
+      <a href="mailto:janhavilunge25@gmail.com" class="contact-card">
+        <div class="c-icon">📧</div>
+        <div><div class="c-label">Email</div><div class="c-value">janhavilunge25@gmail.com</div></div>
+      </a>
+      <!-- ══ PHONE ══ -->
+      <a href="tel:+919561101480" class="contact-card">
+        <div class="c-icon">📞</div>
+        <div><div class="c-label">Phone</div><div class="c-value">+91 9561101480</div></div>
+      </a>
+      <!-- ══ LinkedIn ══ -->
+      <a href="https://www.linkedin.com/in/janhavi-lunge-386828389" class="contact-card" target="_blank" rel="noreferrer">
+        <div class="c-icon">💼</div>
+        <div><div class="c-label">LinkedIn</div><div class="c-value">linkedin.com/in/janhavi-lunge</div></div>
+      </a>
+      <!-- ══ GitHub ══ -->
+      <a href="https://github.com/janhavilunge25-ui" class="contact-card" target="_blank" rel="noreferrer">
+        <div class="c-icon">🐙</div>
+        <div><div class="c-label">GitHub</div><div class="c-value">github.com/JanhaviLunge</div></div>
+      </a>
+      <!-- ══ LOCATION ══ -->
+      <div class="contact-card" style="pointer-events:none;">
+        <div class="c-icon">📍</div>
+        <div><div class="c-label">Location</div><div class="c-value"> Akola , Maharashtra , India</div></div>
+      </div>
+    </div>
+
+
+    <div class="contact-form reveal-right">
+      <form id="contact-form">
+        <div class="form-group">
+          <label>Your Name</label>
+          <input type="text" name="from_name" placeholder="Your name." required />
+        </div>
+        <div class="form-group">
+          <label>Email Address</label>
+          <input type="email" name="from_email" placeholder="your.email@example.com" required />
+        </div>
+        <div class="form-group">
+          <label>Subject</label>
+          <input type="text" name="subject" placeholder="Internship / Collaboration / Query" required />
+        </div>
+        <div class="form-group">
+          <label>Message</label>
+          <textarea name="message" placeholder="Tell me about your project or opportunity..." required></textarea>
+        </div>
+        <br>
+        <button class="submit-btn f-submit" type="submit">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+          Send Message →
+        </button>
+        <div id="form-message"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <div class="footer-grid">
+    <div class="col-brand">
+      <h2>Janhavi's Portfolio</h2>
+      <p>Thank you for visiting my personal portfolio website. I'm a BCA student passionate about building real-world software solutions.</p>
+      <p class="tagline">Keep Rising 🚀 Connect with me over live chat!</p>
+    </div>
+
+    <div class="col-links">
+      <h3>Quick Links</h3>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="col-contact">
+      <h3>Contact Info</h3>
+      <div class="contact-row">
+        <div class="contact-item"><span class="icon">📞</span><span>+91 9561101480</span></div>
+        <div class="contact-item"><span class="icon">✉️</span><span>janhavilunge25@gmail.com</span></div>
+        <div class="contact-item"><span class="icon">📍</span><span>Akola, Maharashtra, India</span></div>
+      </div>
+      <!-- ══ links ══ -->
+      <div class="social-row">
+        <a class="social-btn" href="https://www.linkedin.com/in/janhavi-lunge" title="LinkedIn" target="_blank" rel="noreferrer">in</a>
+        <a class="social-btn" href="https://github.com/janhavilunge25-ui" title="GitHub" target="_blank" rel="noreferrer">G</a>
+        <a class="social-btn" href="mailto:janhavilunge25@gmail.com" title="Email">@</a>
+        <a class="social-btn" href="https://www.instagram.com/jaan_vi.___?igsh=MWNsOWpic3U4Yjd3ZQ==" title="Instagram" target="_blank" rel="noreferrer">IG</a>
+        
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>Made with 💜 by Janhavi Janardhan Lunge · © 2025 All Rights Reserved</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
