@@ -244,6 +244,22 @@ section {
   background-clip: text;
 }
 
+.skills-hint {
+  color: #c4b5fd;
+  font-size: 14px;
+  font-style: italic;
+  opacity: 0.85;
+  margin-top: -12px;
+  margin-bottom: 28px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.skills-hint span {
+  font-size: 16px;
+}
+
 /* ==== ANIMATIONS ==== */
 .reveal,
 .reveal-left,
@@ -1434,4 +1450,3 @@ footer {
   .nav-links a { font-size: 1.2rem; }
   .nav-toggle { display: flex; z-index: 200; position: relative; }
 }
-
